@@ -1,0 +1,145 @@
+[
+  {
+    "label": "Till payment – groceries",
+    "input": "BZXPQM1234 Confirmed. Ksh4,500.00 paid to QUICKMART SUPERMARKET via Buy Goods and Services 543210. Date 12/9/2026 at 14:22. New M-PESA balance is Ksh21,350.75.",
+    "raw_output": "{\"transaction_id\":\"BZXPQM1234\",\"date\":\"2026-09-12\",\"time\":\"14:22\",\"type\":\"expense\",\"domain\":\"buy_goods_and_services\",\"entity\":\"QUICKMART SUPERMARKET\",\"amount\":4500.0,\"balance\":21350.75,\"fee\":0.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "BZXPQM1234",
+      "date": "2026-09-12",
+      "time": "14:22",
+      "type": "expense",
+      "domain": "buy_goods_and_services",
+      "entity": "QUICKMART SUPERMARKET",
+      "amount": 4500.0,
+      "balance": 21350.75,
+      "fee": 0.0,
+      "reference": null
+    },
+    "valid_json": true
+  },
+  {
+    "label": "Send money – friend",
+    "input": "TXN9087HJKL Confirmed. You have sent Ksh2,000.00 to JAMES MWANGI 0712345678 on 5/9/2026 at 09:15. New M-PESA balance is Ksh15,800.00. Transaction cost, Ksh29.00.",
+    "raw_output": "{\"transaction_id\":\"TXN9087HJKL\",\"date\":\"2026-09-05\",\"time\":\"09:15\",\"type\":\"expense\",\"domain\":\"send_money\",\"entity\":\"JAMES MWANGI\",\"amount\":2000.0,\"balance\":15800.0,\"fee\":29.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "TXN9087HJKL",
+      "date": "2026-09-05",
+      "time": "09:15",
+      "type": "expense",
+      "domain": "send_money",
+      "entity": "JAMES MWANGI",
+      "amount": 2000.0,
+      "balance": 15800.0,
+      "fee": 29.0,
+      "reference": null
+    },
+    "valid_json": true
+  },
+  {
+    "label": "Receive money",
+    "input": "QWERTY54321 Confirmed. You have received Ksh8,750.00 from ALICE NJERI 0798765432 on 11/9/2026 at 16:45. New M-PESA balance is Ksh30,100.50.",
+    "raw_output": "{\"transaction_id\":\"QWERTY54321\",\"date\":\"2026-09-11\",\"time\":\"16:45\",\"type\":\"income\",\"domain\":\"receive_money\",\"entity\":\"ALICE NJERI\",\"amount\":8750.0,\"balance\":30100.5,\"fee\":0.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "QWERTY54321",
+      "date": "2026-09-11",
+      "time": "16:45",
+      "type": "income",
+      "domain": "receive_money",
+      "entity": "ALICE NJERI",
+      "amount": 8750.0,
+      "balance": 30100.5,
+      "fee": 0.0,
+      "reference": null
+    },
+    "valid_json": true
+  },
+  {
+    "label": "PayBill – rent",
+    "input": "LMNOP67890 Confirmed. Ksh35,000.00 paid to KENYA REAL ESTATE AGENCY via PayBill 111222. Account Number RENT-OCT-2026. Date 1/9/2026 at 08:00. New M-PESA balance is Ksh5,600.00. Transaction cost, Ksh105.00.",
+    "raw_output": "{\"transaction_id\":\"LMNOP67890\",\"date\":\"2026-09-01\",\"time\":\"08:00\",\"type\":\"expense\",\"domain\":\"paybill\",\"entity\":\"KENYA REAL ESTATE AGENCY\",\"amount\":35000.0,\"balance\":5600.0,\"fee\":105.0,\"reference\":\"111222:RENT-OCT-2026\"}",
+    "parsed": {
+      "transaction_id": "LMNOP67890",
+      "date": "2026-09-01",
+      "time": "08:00",
+      "type": "expense",
+      "domain": "paybill",
+      "entity": "KENYA REAL ESTATE AGENCY",
+      "amount": 35000.0,
+      "balance": 5600.0,
+      "fee": 105.0,
+      "reference": "111222:RENT-OCT-2026"
+    },
+    "valid_json": true
+  },
+  {
+    "label": "ATM / Agent withdrawal",
+    "input": "WDRL334455 Confirmed. You have withdrawn Ksh10,000.00 from agent JOHN KAMAU 0722111222 on 10/9/2026 at 11:30. New M-PESA balance is Ksh12,400.25. Transaction cost, Ksh35.00.",
+    "raw_output": "{\"transaction_id\":\"WDRL334455\",\"date\":\"2026-09-10\",\"time\":\"11:30\",\"type\":\"expense\",\"domain\":\"cash_withdrawal\",\"entity\":\"JOHN KAMAU\",\"amount\":10000.0,\"balance\":12400.25,\"fee\":35.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "WDRL334455",
+      "date": "2026-09-10",
+      "time": "11:30",
+      "type": "expense",
+      "domain": "cash_withdrawal",
+      "entity": "JOHN KAMAU",
+      "amount": 10000.0,
+      "balance": 12400.25,
+      "fee": 35.0,
+      "reference": null
+    },
+    "valid_json": true
+  },
+  {
+    "label": "Airtime purchase",
+    "input": "ARTRP998877 Confirmed. Ksh100.00 airtime purchased for 0722999888 on 9/9/2026 at 07:05. New M-PESA balance is Ksh22,400.00.",
+    "raw_output": "{\"transaction_id\":\"ARTRP998877\",\"date\":\"2026-09-09\",\"time\":\"07:05\",\"type\":\"expense\",\"domain\":\"airtime\",\"entity\":\"Safaricom Airtime\",\"amount\":100.0,\"balance\":22400.0,\"fee\":0.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "ARTRP998877",
+      "date": "2026-09-09",
+      "time": "07:05",
+      "type": "expense",
+      "domain": "airtime",
+      "entity": "Safaricom Airtime",
+      "amount": 100.0,
+      "balance": 22400.0,
+      "fee": 0.0,
+      "reference": null
+    },
+    "valid_json": true
+  },
+  {
+    "label": "PayBill – KPLC electricity",
+    "input": "ELEC556677 Confirmed. Ksh3,200.00 paid to KPLC PREPAID via PayBill 888880. Account Number 1234567890. Date 8/9/2026 at 19:22. New M-PESA balance is Ksh18,900.00. Transaction cost, Ksh0.00.",
+    "raw_output": "{\"transaction\":\"PayBill 888880\",\"date\":\"2026-09-08\",\"time\":\"19:22\",\"domain\":\"paybill\",\"entity\":\"KPLC\",\"amount\":3200.0,\"balance\":18900.0,\"fee\":0.0,\"reference\":\"888880:1234567890\"}",
+    "parsed": {
+      "transaction": "PayBill 888880",
+      "date": "2026-09-08",
+      "time": "19:22",
+      "domain": "paybill",
+      "entity": "KPLC",
+      "amount": 3200.0,
+      "balance": 18900.0,
+      "fee": 0.0,
+      "reference": "888880:1234567890"
+    },
+    "valid_json": true
+  },
+  {
+    "label": "Edge: zero balance after payment",
+    "input": "EDGE000111 Confirmed. Ksh500.00 paid to MAMA MBOGA STALL via Buy Goods and Services 654321. Date 13/9/2026 at 07:00. New M-PESA balance is Ksh0.00.",
+    "raw_output": "{\"transaction_id\":\"EDGE000111\",\"date\":\"2026-09-13\",\"time\":\"07:00\",\"type\":\"expense\",\"domain\":\"buy_goods_and_services\",\"entity\":\"MAMA MBOGA STALL\",\"amount\":500,\"balance\":0.0,\"fee\":0.0,\"reference\":null}",
+    "parsed": {
+      "transaction_id": "EDGE000111",
+      "date": "2026-09-13",
+      "time": "07:00",
+      "type": "expense",
+      "domain": "buy_goods_and_services",
+      "entity": "MAMA MBOGA STALL",
+      "amount": 500,
+      "balance": 0.0,
+      "fee": 0.0,
+      "reference": null
+    },
+    "valid_json": true
+  }
+]

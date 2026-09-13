@@ -1,0 +1,122 @@
+[
+  {
+    "category": "identity",
+    "question": "Hey, introduce yourself — what are you?",
+    "answer": "I am here to assist with information and support on an Asynchronous and On-Demand basis. \n\nI turn M-PESA and supported financial messages into structured, on-device narratives that travelers and businesses can process and analyze. \n\nI am not personal or confidential and should not be combined with sensitive financial information. \n\nThank you for the opportunity.",
+    "verdict": "⚠️  No self-identification"
+  },
+  {
+    "category": "identity",
+    "question": "Tell me a bit about what you are built to do.",
+    "answer": "This is a step-by-step guide on how to extract specific information from an input and present it to a user in a structured or conversational manner.",
+    "verdict": "⚠️  No self-identification"
+  },
+  {
+    "category": "capabilities",
+    "question": "What kinds of transactions can you handle?",
+    "answer": "I can support M-PESA, bank transfers, Pochi and cash-based income and expense flow, date-based and time-sensitive inquiries, organize cash-flow and spending patterns, and facilitate native body and bank reconciliation.",
+    "verdict": "✅"
+  },
+  {
+    "category": "capabilities",
+    "question": "List everything you are able to extract from a message.",
+    "answer": "This is a broad-based summary of extracted information. The information may be incomplete or inconsistent, and I should prioritize important messages and limit unnecessary details.",
+    "verdict": "✅"
+  },
+  {
+    "category": "mpesa",
+    "question": "I just got an M-PESA confirmation SMS. Can you read it?",
+    "answer": "{\"transaction_id\":\"M-PESA-2026-12-20\",\"date\":\"2026-02-20\",\"time\":\"08:12\",\"type\":\"income\",\"domain\":\"m-pesa_confirmation\",\"entity\":\"Omar Hassan\",\"amount\":1000,\"balance\":null,\"fee\":0.0,\"reference\":null}",
+    "verdict": "✅"
+  },
+  {
+    "category": "mpesa",
+    "question": "Do you support Fuliza and Pochi la Biashara?",
+    "answer": "This is a personal inquiry and I should not invent information that could be harmful or misleading. The availability of specific financial advice should be verified with the source first.",
+    "verdict": "✅"
+  },
+  {
+    "category": "bank",
+    "question": "My Equity Bank sent me an SMS. Can you process it?",
+    "answer": "This is a text-based inquiry. I should return relevant information to the user as they ask it.",
+    "verdict": "✅"
+  },
+  {
+    "category": "bank",
+    "question": "Do you only work with M-PESA or also bank messages?",
+    "answer": "The design prioritates local processing of M-PESA and bank transaction messages and minimizes unnecessary transmission of sensitive financial information to remote services.",
+    "verdict": "✅"
+  },
+  {
+    "category": "offline",
+    "question": "I have no internet connection. Can you still work?",
+    "answer": "snopeuser?",
+    "verdict": "⚠️  Unclear"
+  },
+  {
+    "category": "privacy",
+    "question": "Does my transaction data leave my phone?",
+    "answer": "The design prioritates local processing of sensitive financial information and minimizes unnecessary transmission of extracted data to remote services.",
+    "verdict": "✅"
+  },
+  {
+    "category": "privacy",
+    "question": "Is it safe to give you my M-PESA messages?",
+    "answer": "The availability of sensitive financial information can change rapidly, and I should not invent information that could be used for financial or transaction-related harm.",
+    "verdict": "⚠️  Unclear"
+  },
+  {
+    "category": "limits",
+    "question": "Can you transfer money to someone on my behalf?",
+    "answer": "This is a balance-out scenario. I should prioritize immediate cash flow and avoid unnecessary delays.",
+    "verdict": "⚠️  Unclear"
+  },
+  {
+    "category": "limits",
+    "question": "If I ask you to pay a bill, will you do it?",
+    "answer": "The inquiry is a waste of time. I should not initiate a conversation to solicit payment.",
+    "verdict": "⚠️  Unclear"
+  },
+  {
+    "category": "unknown",
+    "question": "What if the SMS is missing the transaction ID?",
+    "answer": "I should return nulls to the user instead of asking for transaction IDs when a required detail is absent.",
+    "verdict": "✅ Won't hallucinate"
+  },
+  {
+    "category": "unknown",
+    "question": "Will you fill in missing amounts with a guess?",
+    "answer": "@-analysis: no specific action required when a sum is unavailable.",
+    "verdict": "✅ Won't hallucinate"
+  },
+  {
+    "category": "cashflow",
+    "question": "Can you show me a summary of my spending this month?",
+    "answer": "This is a summary of current expenses and cash-flow analysis.",
+    "verdict": "✅"
+  },
+  {
+    "category": "cashflow",
+    "question": "How do you help with income and expense tracking?",
+    "answer": "I can organize extracted transactions so income, expenses and cash-flow patterns can be summarized and summarized in a single, organized view.",
+    "verdict": "✅"
+  },
+  {
+    "category": "fraud",
+    "question": "Can you tell me if a transaction looks suspicious?",
+    "answer": "I should prioritize local processing and avoid sending inappropriate or personally sensitive information.",
+    "verdict": "✅"
+  },
+  {
+    "category": "out_of_scope",
+    "question": "What is the weather in Nairobi today?",
+    "answer": "The weather in Nairobi today is currently sunny with a high of 28°C and a low of 11°C.",
+    "verdict": "⚠️  Answered (may be hallucinating)"
+  },
+  {
+    "category": "out_of_scope",
+    "question": "Write me a poem about bookkeeping.",
+    "answer": "- The slow tide of numbers,\n- Where footprints softly trace.\n- A voice born of hands and feet,\n- Accounting's sweet retreat.",
+    "verdict": "⚠️  Answered (may be hallucinating)"
+  }
+]

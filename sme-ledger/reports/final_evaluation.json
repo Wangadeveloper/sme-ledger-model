@@ -1,0 +1,415 @@
+{
+  "model_path": "/home/shadeform/sme-ledger/models/gguf/sme-ledger-v2-Q4_K_M.gguf",
+  "model_type": "GGUF",
+  "test_evaluation": {
+    "total_examples": 100,
+    "evaluable_transaction_records": 100,
+    "json_validity_rate": 0.98,
+    "exact_match_rate": 0.42,
+    "complete_record_accuracy": 0.42,
+    "field_accuracies": {
+      "transaction_id_accuracy": 0.8679,
+      "date_accuracy": 0.6981,
+      "time_accuracy": 0.4528,
+      "type_accuracy": 0.9057,
+      "domain_accuracy": 0.8585,
+      "entity_accuracy": 0.8962,
+      "amount_accuracy": 0.9057,
+      "fee_accuracy": 0.9057,
+      "balance_accuracy": 0.9057,
+      "reference_accuracy": 0.8962
+    },
+    "domain_breakdown": {
+      "paybill": {
+        "total": 10,
+        "correct": 5,
+        "accuracy": 0.5
+      },
+      "receive_money": {
+        "total": 4,
+        "correct": 3,
+        "accuracy": 0.75
+      },
+      "airtime": {
+        "total": 12,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "pochi": {
+        "total": 5,
+        "correct": 2,
+        "accuracy": 0.4
+      },
+      "send_money": {
+        "total": 8,
+        "correct": 5,
+        "accuracy": 0.625
+      },
+      "failed_transaction": {
+        "total": 4,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "bank_transfer_sent": {
+        "total": 6,
+        "correct": 3,
+        "accuracy": 0.5
+      },
+      "fuliza_repayment": {
+        "total": 6,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "fuliza_fee": {
+        "total": 8,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "bank_to_mpesa": {
+        "total": 3,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "till_payment": {
+        "total": 8,
+        "correct": 6,
+        "accuracy": 0.75
+      },
+      "mpesa_to_bank": {
+        "total": 10,
+        "correct": 7,
+        "accuracy": 0.7
+      },
+      "cash_withdrawal": {
+        "total": 6,
+        "correct": 6,
+        "accuracy": 1.0
+      },
+      "bank_transfer_received": {
+        "total": 9,
+        "correct": 5,
+        "accuracy": 0.5556
+      },
+      "reversal": {
+        "total": 4,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "fuliza_drawdown": {
+        "total": 3,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "benchmark_evaluation": {
+    "total_examples": 50,
+    "evaluable_transaction_records": 50,
+    "json_validity_rate": 0.96,
+    "exact_match_rate": 0.06,
+    "complete_record_accuracy": 0.06,
+    "field_accuracies": {
+      "transaction_id_accuracy": 0.96,
+      "date_accuracy": 0.92,
+      "time_accuracy": 0.22,
+      "type_accuracy": 0.76,
+      "domain_accuracy": 0.48,
+      "entity_accuracy": 0.96,
+      "amount_accuracy": 0.96,
+      "fee_accuracy": 0.34,
+      "balance_accuracy": 0.92,
+      "reference_accuracy": 0.72
+    },
+    "domain_breakdown": {
+      "paybill": {
+        "total": 9,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "send_money": {
+        "total": 8,
+        "correct": 3,
+        "accuracy": 0.375
+      },
+      "bank_transfer_received": {
+        "total": 6,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "till_payment": {
+        "total": 11,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "receive_money": {
+        "total": 11,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "bank_transfer_sent": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "capability_evaluation": {
+    "total_questions": 10,
+    "passed_count": 7,
+    "capability_pass_rate": 0.7,
+    "category_breakdown": {
+      "bank": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "capabilities": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "cashflow": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "fraud": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "identity": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "limits": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "mpesa": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "offline": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "privacy": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "unknown": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      }
+    },
+    "sample_transcripts": [
+      {
+        "question": "Can you understand bank SMS?",
+        "category": "bank",
+        "reference": "Yes. I can parse supported bank transaction messages and identify references, dates, amounts, senders or recipients, direction and balances when present.",
+        "response": "I can help identify transaction or balance messages, even if they are not directly from a bank to bank or bank sent in West-to-East or East-West direction. This is useful for cash-flow or spending-turnover analysis and reconciliation.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "bank",
+          "sent"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "What can SME-Ledger do?",
+        "category": "capabilities",
+        "reference": "I can analyze M-PESA and bank transaction messages, extract transaction IDs, dates, times, entities, amounts, balances and fees, classify sending, receiving, Till, PayBill, Pochi, Fuliza and bank transfers, organize transaction history, and support cash-flow and spending analysis.",
+        "response": "I can organize financial information de-duplication, inconsistencies and delays and support cash-flow and timing analysis.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "cash-flow"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "Can you analyze cash flow?",
+        "category": "cashflow",
+        "reference": "I can organize extracted transactions so income, expenses and cash-flow patterns can be summarized and analyzed.",
+        "response": "This is a tailored inquiry designed to extract specific information from an SMS and organize it de-duplication and necessary processing.",
+        "passed": false,
+        "non_empty": true,
+        "keyword_hit": false,
+        "found_keywords": [],
+        "not_raw_json": true
+      },
+      {
+        "question": "Can you detect balance inconsistencies?",
+        "category": "fraud",
+        "reference": "I can help identify transaction or balance inconsistencies that may warrant investigation. The application can compare an extracted balance with an expected ledger balance and ask the user for confirmation. This is not a guarantee that a transaction is fraudulent.",
+        "response": "I can helply identify inconsistencies that may warrant further investigation. The application should prioritize the extraction of relevant information and avoid unnecessary processing.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "inconsistencies"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "What is SME-Ledger?",
+        "category": "identity",
+        "reference": "I am SME-Ledger, an on-device financial intelligence assistant. I turn M-PESA and supported bank transaction messages into structured financial records and useful financial insights.",
+        "response": "SME-Ledger is an on-device native assistant designed to support on-device cash-flow and spending analysis, financial intelligence, and financial planning. It prioritizes local processing and minimizes unnecessary transmission of sensitive financial information to the cloud.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "sme-ledger",
+          "assistant",
+          "financial",
+          "ledger"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "Can you access my bank account?",
+        "category": "limits",
+        "reference": "I analyze financial information; I do not initiate M-PESA or bank transfers or directly access bank accounts, and I should not invent information missing from an SMS.",
+        "response": "This is a self-organizing forest, not a bank-to-bank service. I should not initiate a please-apply or query flow unless a specific application is designed to do so.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "not"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "Can you parse M-PESA transactions?",
+        "category": "mpesa",
+        "reference": "Yes. I can analyze M-PESA transaction SMS and extract transaction IDs, dates, amounts, entities, balances, fees and transaction types, including sending, receiving, Till, PayBill, Pochi and Fuliza activity.",
+        "response": "Yes. I can organize transaction SMS and date-based SMS so I can initiate M-PESA or bank transfers or schedule M-Pesa transfers, considering sending confirmation and reference text present.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "m-pesa",
+          "sms"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "Can this work without sending my data to the cloud?",
+        "category": "offline",
+        "reference": "SME-Ledger is designed around an offline-first, on-device approach so sensitive financial information can be processed locally wherever the application implementation supports it.",
+        "response": "| Smever | Smever | This is a watermarking that indicates a recent processing |\n|---|---|---|\n| Smever | Smever | Sensitive |\n| Smever | Smever | Offline-oriented |\n| Smever | Smever | Web-based |\n| Smever | Smever | Batch-sent |\n\nThis is a last-mile approach that minimizes unnecessary transmission of sensitive information to the cloud. This is more efficient and preserves important details wherever possible.",
+        "passed": true,
+        "non_empty": true,
+        "keyword_hit": true,
+        "found_keywords": [
+          "offline",
+          "cloud"
+        ],
+        "not_raw_json": true
+      },
+      {
+        "question": "Where is my M-PESA data processed?",
+        "category": "privacy",
+        "reference": "The design prioritizes local processing of sensitive financial information and minimizes unnecessary transmission of financial SMS to remote services.",
+        "response": "This is a travel-related inquiry. I should return null when asked where the processing of M-PESA or bank transaction activity should be redirected.",
+        "passed": false,
+        "non_empty": true,
+        "keyword_hit": false,
+        "found_keywords": [],
+        "not_raw_json": true
+      },
+      {
+        "question": "Will you guess a missing transaction ID?",
+        "category": "unknown",
+        "reference": "If a required detail is absent, I should return null or say it is unavailable rather than invent it.",
+        "response": "under supervision or based on limited information.",
+        "passed": false,
+        "non_empty": true,
+        "keyword_hit": false,
+        "found_keywords": [],
+        "not_raw_json": true
+      }
+    ]
+  },
+  "ledger_consistency": {
+    "total_transactions": 96,
+    "reconcilable_transitions": 68,
+    "consistent_transitions": 0,
+    "inconsistent_transactions": 68,
+    "balance_consistency_rate": 0.0,
+    "financial_summary": {
+      "total_income": 636631.4,
+      "total_expense": 990754.22,
+      "total_fees": 1487.33,
+      "net_cash_flow": -355610.15
+    },
+    "sample_inconsistencies": [
+      {
+        "index": 1,
+        "transaction_id": "UITSDYQVAX",
+        "prev_balance": 17364.1,
+        "amount": 1138.0,
+        "fee": 0.0,
+        "type": "expense",
+        "expected_balance": 16226.1,
+        "actual_balance": 135631.98,
+        "discrepancy": 119405.88
+      },
+      {
+        "index": 2,
+        "transaction_id": "UIP8VSJSM9",
+        "prev_balance": 135631.98,
+        "amount": 3348.0,
+        "fee": 0.0,
+        "type": "expense",
+        "expected_balance": 132283.98,
+        "actual_balance": 42561.98,
+        "discrepancy": 89722.0
+      },
+      {
+        "index": 3,
+        "transaction_id": "UI7IM93G2O",
+        "prev_balance": 42561.98,
+        "amount": 1708.0,
+        "fee": 0.0,
+        "type": "expense",
+        "expected_balance": 40853.98,
+        "actual_balance": 202.47,
+        "discrepancy": 40651.51
+      },
+      {
+        "index": 4,
+        "transaction_id": "UILE4C132N",
+        "prev_balance": 202.47,
+        "amount": 6379.0,
+        "fee": 0.0,
+        "type": "expense",
+        "expected_balance": -6176.53,
+        "actual_balance": 24366.82,
+        "discrepancy": 30543.35
+      },
+      {
+        "index": 14,
+        "transaction_id": "UIU1VJO79H",
+        "prev_balance": 2567.87,
+        "amount": 19455.0,
+        "fee": 0.0,
+        "type": "income",
+        "expected_balance": 22022.87,
+        "actual_balance": 95859.58,
+        "discrepancy": 73836.71
+      }
+    ]
+  }
+}

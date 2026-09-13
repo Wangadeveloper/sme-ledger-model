@@ -1,0 +1,372 @@
+{
+  "dataset_name": "SME-Ledger V2 Synthetic Financial Intelligence Dataset",
+  "dataset_version": "2.0",
+  "splits": {
+    "train": {
+      "count": 15624,
+      "malformed_count": 0,
+      "target_analysis": {
+        "target_kinds": {
+          "object": 15202,
+          "array": 396,
+          "text": 26
+        },
+        "domain_counts": {
+          "receive_money": 1199,
+          "fuliza_drawdown": 946,
+          "till_payment": 1242,
+          "pochi": 1263,
+          "send_money": 1192,
+          "paybill": 1217,
+          "reversal": 968,
+          "failed_transaction": 912,
+          "airtime": 1215,
+          "bank_transfer_sent": 918,
+          "bank_transfer_received": 924,
+          "fuliza_fee": 977,
+          "fuliza_repayment": 947,
+          "mpesa_to_bank": 971,
+          "cash_withdrawal": 947,
+          "bank_to_mpesa": 948
+        },
+        "type_counts": {
+          "income": 4985,
+          "expense": 10889,
+          "unknown": 912
+        },
+        "schema_issues_count": 912,
+        "sample_schema_issues": [
+          {
+            "index": 5,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 6,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 39,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 58,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 79,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 80,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 88,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 95,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 145,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 156,
+            "issue": "invalid_type: unknown"
+          }
+        ]
+      },
+      "avg_user_char_length": 163.93,
+      "avg_assistant_char_length": 212.83
+    },
+    "validation": {
+      "count": 1953,
+      "malformed_count": 0,
+      "target_analysis": {
+        "target_kinds": {
+          "object": 1891,
+          "array": 61,
+          "text": 1
+        },
+        "domain_counts": {
+          "fuliza_fee": 91,
+          "fuliza_repayment": 128,
+          "send_money": 165,
+          "bank_transfer_sent": 104,
+          "paybill": 152,
+          "fuliza_drawdown": 132,
+          "till_payment": 163,
+          "reversal": 122,
+          "bank_to_mpesa": 131,
+          "pochi": 146,
+          "receive_money": 149,
+          "bank_transfer_received": 130,
+          "cash_withdrawal": 117,
+          "failed_transaction": 136,
+          "mpesa_to_bank": 120,
+          "airtime": 149
+        },
+        "type_counts": {
+          "expense": 1335,
+          "income": 664,
+          "unknown": 136
+        },
+        "schema_issues_count": 136,
+        "sample_schema_issues": [
+          {
+            "index": 25,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 30,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 32,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 35,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 39,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 42,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 63,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 67,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 70,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 75,
+            "issue": "invalid_type: unknown"
+          }
+        ]
+      },
+      "avg_user_char_length": 166.4,
+      "avg_assistant_char_length": 216.41
+    },
+    "test": {
+      "count": 1954,
+      "malformed_count": 0,
+      "target_analysis": {
+        "target_kinds": {
+          "object": 1907,
+          "array": 43,
+          "text": 4
+        },
+        "domain_counts": {
+          "paybill": 139,
+          "receive_money": 142,
+          "airtime": 153,
+          "pochi": 135,
+          "send_money": 146,
+          "failed_transaction": 135,
+          "bank_transfer_sent": 127,
+          "fuliza_repayment": 142,
+          "fuliza_fee": 125,
+          "bank_to_mpesa": 115,
+          "till_payment": 153,
+          "mpesa_to_bank": 117,
+          "cash_withdrawal": 112,
+          "bank_transfer_received": 125,
+          "reversal": 105,
+          "fuliza_drawdown": 108
+        },
+        "type_counts": {
+          "expense": 1349,
+          "income": 595,
+          "unknown": 135
+        },
+        "schema_issues_count": 135,
+        "sample_schema_issues": [
+          {
+            "index": 6,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 75,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 81,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 95,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 109,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 138,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 149,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 168,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 184,
+            "issue": "invalid_type: unknown"
+          },
+          {
+            "index": 196,
+            "issue": "invalid_type: unknown"
+          }
+        ]
+      },
+      "avg_user_char_length": 163.84,
+      "avg_assistant_char_length": 210.99
+    },
+    "benchmark": {
+      "count": 2000,
+      "malformed_count": 0,
+      "target_analysis": {
+        "target_kinds": {
+          "object": 2000,
+          "array": 0,
+          "text": 0
+        },
+        "domain_counts": {
+          "paybill": 344,
+          "send_money": 353,
+          "bank_transfer_received": 306,
+          "till_payment": 328,
+          "receive_money": 316,
+          "bank_transfer_sent": 353
+        },
+        "type_counts": {
+          "expense": 1378,
+          "income": 622
+        },
+        "schema_issues_count": 0,
+        "sample_schema_issues": []
+      },
+      "avg_user_char_length": 138.67,
+      "avg_assistant_char_length": 204.61
+    }
+  },
+  "leakage_and_duplicates": {
+    "internal_duplicates": {
+      "train": 0,
+      "validation": 0,
+      "test": 0,
+      "benchmark": 0
+    },
+    "cross_split_leakage": {
+      "train_vs_validation": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      },
+      "train_vs_test": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      },
+      "train_vs_benchmark": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      },
+      "validation_vs_test": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      },
+      "validation_vs_benchmark": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      },
+      "test_vs_benchmark": {
+        "exact_overlap_count": 0,
+        "near_overlap_count": 0,
+        "sample_exact_leaks": []
+      }
+    }
+  },
+  "capability_examples": {
+    "exists": true,
+    "count": 55,
+    "categories": {
+      "offline": 9,
+      "capabilities": 4,
+      "privacy": 3,
+      "mpesa": 3,
+      "identity": 8,
+      "unknown": 3,
+      "bank": 3,
+      "fraud": 3,
+      "limits": 8,
+      "cashflow": 3,
+      "I am SME-Ledger, an on-device financial intelligence assistant. I analyze M-PESA and bank transaction SMS to extract structured records and financial insights.": 1,
+      "No. I cannot make payments or initiate any financial transactions. I only read and analyze transaction SMS messages to extract structured data.": 1,
+      "out_of_scope": 6
+    }
+  },
+  "metadata_principles": [
+    "balanced domains",
+    "wording variation",
+    "hard numeric cases",
+    "multiple dates",
+    "multiple identifiers",
+    "missing-field handling",
+    "noise augmentation",
+    "coherent balances",
+    "capability instruction tuning",
+    "held-out benchmark"
+  ],
+  "metadata_domains": [
+    "pochi",
+    "mpesa_to_bank",
+    "fuliza_drawdown",
+    "fuliza_fee",
+    "paybill",
+    "receive_money",
+    "till_payment",
+    "fuliza_repayment",
+    "reversal",
+    "bank_transfer_received",
+    "airtime",
+    "bank_to_mpesa",
+    "failed_transaction",
+    "bank_transfer_sent",
+    "send_money",
+    "cash_withdrawal"
+  ],
+  "metadata_schema": [
+    "transaction_id",
+    "date",
+    "time",
+    "type",
+    "domain",
+    "entity",
+    "amount",
+    "balance",
+    "fee",
+    "reference"
+  ],
+  "validation_status": "PASSED"
+}
